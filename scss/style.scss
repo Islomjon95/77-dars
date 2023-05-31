@@ -1,0 +1,20 @@
+$matnRangi: #1685ff;
+$fontFamily: monospace;
+$size: 45px;
+
+
+*{
+    margin: {
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+p{
+    color: $matnRangi;
+    font-family: $fontFamily;
+    font-size: $size;
+
+}
