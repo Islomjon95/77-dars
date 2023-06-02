@@ -1,7 +1,4 @@
-$matnRangi: #1685ff;
-$fontFamily: monospace;
-$size: 45px;
-
+@import "variable.scss";
 
 *{
     margin: {
@@ -12,9 +9,48 @@ $size: 45px;
     }
 }
 
-p{
-    color: $matnRangi;
-    font-family: $fontFamily;
-    font-size: $size;
+.nav{
+    background-color: $bgColor;
+    width: 100%;
+    height: 80px;
 
+    &_menyu{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+         
+    }
+
+    &_item{
+        list-style-type: none;
+        margin: not(last-child){
+            right: 80px;
+        };
+
+        .nav_link{
+            text-decoration: none;
+            color: $fontColor;
+            line-height: 70px;
+        }
+
+        transition: 1.5s ease-in-out;
+        
+    }
+
+    &_item :hover{
+        color: green;
+        transform: 0.5s ease;
+    }
+}
+
+
+
+.btn_red{
+    @include btn();
+    background-color: rgb(138, 43, 43);
+}
+
+.btn_green{
+    @include btn();
+    background-color: rgb(14, 95, 14);
 }

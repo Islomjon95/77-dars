@@ -1,0 +1,10 @@
+$bgColor: #1584ff;
+$fontColor: #fffddd;
+$fontFamily: monospace; 
+
+@mixin btn{
+    margin-top: 23px;
+    border: 2px solid $fontColor;
+    color: $fontColor;
+    border-radius: 6px;
+}
